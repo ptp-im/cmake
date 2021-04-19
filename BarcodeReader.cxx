@@ -113,7 +113,7 @@ int barcode_decoding(const unsigned char* buffer, int size, int formats, int thr
 	if (iRet != DBR_OK && iRet != DBRERR_MAXICODE_LICENSE_INVALID && iRet != DBRERR_AZTEC_LICENSE_INVALID && iRet != DBRERR_LICENSE_EXPIRED && iRet != DBRERR_QR_LICENSE_INVALID && iRet != DBRERR_GS1_COMPOSITE_LICENSE_INVALID &&
 		iRet != DBRERR_1D_LICENSE_INVALID && iRet != DBRERR_PDF417_LICENSE_INVALID && iRet != DBRERR_DATAMATRIX_LICENSE_INVALID && iRet != DBRERR_GS1_DATABAR_LICENSE_INVALID && iRet != DBRERR_PATCHCODE_LICENSE_INVALID)
 	{
-		printf("Failed to read barcode: %s\n", CBarcodeReader::GetErrorString(iRet));
+		//printf("Failed to read barcode: %s\n", CBarcodeReader::GetErrorString(iRet));
 		// return 0;
 	}
 
