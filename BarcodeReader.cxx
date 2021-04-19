@@ -77,7 +77,17 @@ unsigned char * read_file_binary(const char* filename, int* out_size) {
 	fclose (fp);
 	return buffer;
 }
-
+/**
+ * @brief 
+ * 
+ * @param buffer 
+ * @param size 
+ * @param formats 
+ * @param threadcount 
+ * @param license 
+ * @param config 
+ * @return int 
+ */
 int barcode_decoding(const unsigned char* buffer, int size, int formats, int threadcount, char* license, char* config) 
 {
 	std::thread::id thread_id = std::this_thread::get_id();
